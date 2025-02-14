@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "damg7370spring25DF"
+		},
+		"AzureDataLakeStorage_LS_accountKey": {
+			"value": ""
+		},
+		"Snowflake_LS_password": {
+			"value": ""
+		},
+		"AzureBlobStorage_LS_sasUri": {
+			"value": ""
+		},
+		"AzureDataLakeStorage_LS_properties_typeProperties_url": {
+			"value": "https://damg7370rachana.dfs.core.windows.net/"
+		},
+		"Snowflake_LS_properties_typeProperties_database": {
+			"value": "NYPD_DB"
+		},
+		"Snowflake_LS_properties_typeProperties_role": {
+			"value": "DAMG_ROLE"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
