@@ -1,0 +1,96 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "nypd_arrests_data.csv",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ARREST_KEY",
+				"type": "String"
+			},
+			{
+				"name": "PD_CD",
+				"type": "String"
+			},
+			{
+				"name": "KY_CD",
+				"type": "String"
+			},
+			{
+				"name": "ARREST_BORO",
+				"type": "String"
+			},
+			{
+				"name": "ARREST_PRECINCT",
+				"type": "String"
+			},
+			{
+				"name": "AGE_GROUP",
+				"type": "String"
+			},
+			{
+				"name": "PERP_SEX",
+				"type": "String"
+			},
+			{
+				"name": "PERP_RACE",
+				"type": "String"
+			},
+			{
+				"name": "New_Latitude",
+				"type": "String"
+			},
+			{
+				"name": "New_Longitude",
+				"type": "String"
+			},
+			{
+				"name": "LAW_CAT_CD_CLEANED",
+				"type": "String"
+			},
+			{
+				"name": "PD_DESC_CLEANED",
+				"type": "String"
+			},
+			{
+				"name": "OFNS_DESC_CLEANED",
+				"type": "String"
+			},
+			{
+				"name": "LAW_CODE_CLEANED",
+				"type": "String"
+			},
+			{
+				"name": "ARREST_DATE_CLEANED",
+				"type": "String"
+			},
+			{
+				"name": "File_Name",
+				"type": "String"
+			},
+			{
+				"name": "User_Name",
+				"type": "String"
+			},
+			{
+				"name": "Load_Date",
+				"type": "String"
+			}
+		]
+	}
+}
